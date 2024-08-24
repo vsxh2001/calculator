@@ -1,14 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+    margin: 0;
+    /* Remove default margin */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    /* Colorful gradient background */
+    font-family: Arial, sans-serif;
+    /* Optional: Set a default font */
+}
+
+#calculator {
+    background: white;
+    /* Background color for the calculator */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
 #display {
-    width: 100%;
+    width: 95%;
     text-align: left;
+    /* Align text to the right */
+    padding: 10px;
+    font-size: 2em;
+    /* Larger text for display */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 #keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    /* Space between buttons */
 }
 
 button {
+    padding: 20px;
+    font-size: 1.5em;
+    /* Larger text for buttons */
     border-radius: 10%;
-    border-image: none;
+    border: none;
+    /* Remove default border */
+    background: #f1f1f1;
+    /* Light background for buttons */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background 0.3s;
+    /* Smooth background change on hover */
+}
+
+button:hover {
+    background: #ddd;
+    /* Darker background on hover */
+}
+
+button:active {
+    background: #bbb;
+    /* Darker background on click */
 }
