@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button id="clear" class="operator" , onclick="clearDisplay()">C</button>
+            <button id="backspace" class="operator" , onclick="backspace()">⌫</button>
+            <button id="divide" class="operator" , onclick="updateDisplay('÷')">÷</button>
+            <button id="multiply" class="operator" , onclick="updateDisplay('×')">×</button>
+            <button id="seven" class="number" , onclick="updateDisplay('7')">7</button>
+            <button id="eight" class="number" onclick="updateDisplay('8')">8</button>
+            <button id="nine" class="number" onclick="updateDisplay('9')">9</button>
+            <button id="subtract" class="operator" onclick="updateDisplay('-')">-</button>
+            <button id="four" class="number" onclick="updateDisplay('4')">4</button>
+            <button id="five" class="number" onclick="updateDisplay('5')">5</button>
+            <button id="six" class="number" onclick="updateDisplay('6')">6</button>
+            <button id="add" class="operator" onclick="updateDisplay('+')">+</button>
+            <button id="one" class="number" onclick="updateDisplay('1')">1</button>
+            <button id="two" class="number" onclick="updateDisplay('2')">2</button>
+            <button id="three" class="number" onclick="updateDisplay('3')">3</button>
+            <button id="equals" class="operator" onclick="calculateResult()">=</button>
+            <button id="zero" class="number" onclick="updateDisplay('0')">0</button>
+            <button id="decimal" class="number" onclick="updateDisplay('.')">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
